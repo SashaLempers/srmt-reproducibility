@@ -1,0 +1,61 @@
+Reprise: 12 deja faits.
+=== Bareiss exact sur 21 candidats (prod <= 5,000,000) ===
+
+[13/21] a=3 lam=(3,) mu=(3, 3) prod=816,750
+  shape 4950 x 165; nnz_det=100 nnz_perm=100
+  rank_Q(det) = 40  (t = 1.1s)
+  rank_Q(perm) = 40  (t = 1.1s)
+  matches_modular=True
+
+[14/21] a=3 lam=(3,) mu=(5, 1) prod=1,415,700
+  shape 8580 x 165; nnz_det=132 nnz_perm=132
+  rank_Q(det) = 32  (t = 1.6s)
+  rank_Q(perm) = 32  (t = 1.6s)
+  matches_modular=True
+
+[15/21] a=3 lam=(3,) mu=(4, 2) prod=1,764,180
+  shape 10692 x 165; nnz_det=222 nnz_perm=222
+  rank_Q(det) = 51  (t = 3.0s)
+  rank_Q(perm) = 51  (t = 3.0s)
+  matches_modular=True
+
+[16/21] a=4 lam=(1, 1, 1, 1) mu=(4, 1, 1, 1) prod=1,995,840
+  shape 15840 x 126; nnz_det=516 nnz_perm=516
+  rank_Q(det) = 111  (t = 5.2s)
+  rank_Q(perm) = 111  (t = 5.2s)
+  matches_modular=True
+
+[17/21] a=3 lam=(2, 1) mu=(5, 1) prod=2,059,200
+  shape 8580 x 240; nnz_det=150 nnz_perm=150
+  rank_Q(det) = 44  (t = 3.0s)
+  rank_Q(perm) = 44  (t = 3.0s)
+  matches_modular=True
+
+[18/21] a=3 lam=(2, 1) mu=(4, 1, 1) prod=2,217,600
+  shape 9240 x 240; nnz_det=159 nnz_perm=159
+  rank_Q(det) = 37  (t = 2.8s)
+  rank_Q(perm) = 37  (t = 2.8s)
+  matches_modular=True
+
+[19/21] a=3 lam=(2, 1) mu=(4, 2) prod=2,566,080
+  shape 10692 x 240; nnz_det=202 nnz_perm=202
+  rank_Q(det) = 41  (t = 3.5s)
+  rank_Q(perm) = 41  (t = 3.5s)
+  matches_modular=True
+
+[20/21] a=3 lam=(2, 1) mu=(3, 2, 1) prod=2,661,120
+  shape 11088 x 240; nnz_det=150 nnz_perm=150
+  rank_Q(det) = 25  (t = 2.4s)
+  rank_Q(perm) = 25  (t = 2.4s)
+  matches_modular=True
+
+[21/21] a=4 lam=(4,) mu=(7,) prod=3,185,325
+  shape 6435 x 495; nnz_det=42 nnz_perm=42
+  rank_Q(det) = 15  (t = 1.9s)
+  rank_Q(perm) = 15  (t = 2.0s)
+  matches_modular=True
+
+=== Termine. 21 traites ===
+  EQUAL_Q: 21
+
+  Tous concordent avec modulaire? True

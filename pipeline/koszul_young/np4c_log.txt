@@ -1,0 +1,10 @@
+M_det shape=(1134, 1134), max abs val: 1
+
+=== Bareiss v2 (Python int) Y_4(det3) ===
+Traceback (most recent call last):
+  File "/home/user/workspace/srmt/np4c_bareiss_v2.py", line 68, in <module>
+    r_d = bareiss_rank_v2(M_d)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/workspace/srmt/np4c_bareiss_v2.py", line 56, in bareiss_rank_v2
+    raise ValueError(f"Bareiss invariant violation: num={num}, prev_pivot={prev_pivot}, rem={rem} at row={r}, col={c}")
+ValueError: Bareiss invariant violation: num=1, prev_pivot=2, rem=1 at row=520, col=1046

@@ -1,0 +1,390 @@
+{
+  "audit_key": "bareiss_results_21",
+  "description": "21 QQ-CERTIFIED Bareiss exact-rank entries of the Pieri small-|lambda| scan (Theorem 6.5/6.9). All ranks over Q computed by fraction-free Bareiss elimination; det3 and perm3 ranks coincide on all 21 (EQUAL_Q).",
+  "source_files": [
+    "pipeline/koszul_young/final_verdict.json",
+    "pipeline/koszul_young/bareiss_results.json",
+    "pipeline/koszul_young/step8_bareiss.py"
+  ],
+  "method": "fraction-free Bareiss elimination over Q (exact rational arithmetic, sympy.Rational)",
+  "n_entries": 21,
+  "entries": [
+    {
+      "a": 0,
+      "lam": [],
+      "mu": [
+        3
+      ],
+      "dim_lam_x_dim_mu": 165,
+      "rank_det_modp65521": 1,
+      "rank_perm_modp65521": 1,
+      "rank_det_Q_bareiss": 1,
+      "rank_perm_Q_bareiss": 1,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 1,
+      "lam": [
+        1
+      ],
+      "mu": [
+        4
+      ],
+      "dim_lam_x_dim_mu": 4455,
+      "rank_det_modp65521": 3,
+      "rank_perm_modp65521": 3,
+      "rank_det_Q_bareiss": 3,
+      "rank_perm_Q_bareiss": 3,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 1,
+      "lam": [
+        1
+      ],
+      "mu": [
+        3,
+        1
+      ],
+      "dim_lam_x_dim_mu": 8910,
+      "rank_det_modp65521": 3,
+      "rank_perm_modp65521": 3,
+      "rank_det_Q_bareiss": 3,
+      "rank_perm_Q_bareiss": 3,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 2,
+      "lam": [
+        2
+      ],
+      "mu": [
+        5
+      ],
+      "dim_lam_x_dim_mu": 57915,
+      "rank_det_modp65521": 6,
+      "rank_perm_modp65521": 6,
+      "rank_det_Q_bareiss": 6,
+      "rank_perm_Q_bareiss": 6,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 2,
+      "lam": [
+        1,
+        1
+      ],
+      "mu": [
+        3,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 99792,
+      "rank_det_modp65521": 17,
+      "rank_perm_modp65521": 17,
+      "rank_det_Q_bareiss": 17,
+      "rank_perm_Q_bareiss": 17,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 2,
+      "lam": [
+        1,
+        1
+      ],
+      "mu": [
+        4,
+        1
+      ],
+      "dim_lam_x_dim_mu": 114048,
+      "rank_det_modp65521": 21,
+      "rank_perm_modp65521": 21,
+      "rank_det_Q_bareiss": 21,
+      "rank_perm_Q_bareiss": 21,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 2,
+      "lam": [
+        2
+      ],
+      "mu": [
+        3,
+        2
+      ],
+      "dim_lam_x_dim_mu": 133650,
+      "rank_det_modp65521": 11,
+      "rank_perm_modp65521": 11,
+      "rank_det_Q_bareiss": 11,
+      "rank_perm_Q_bareiss": 11,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 2,
+      "lam": [
+        2
+      ],
+      "mu": [
+        4,
+        1
+      ],
+      "dim_lam_x_dim_mu": 142560,
+      "rank_det_modp65521": 11,
+      "rank_perm_modp65521": 11,
+      "rank_det_Q_bareiss": 11,
+      "rank_perm_Q_bareiss": 11,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        1,
+        1,
+        1
+      ],
+      "mu": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 388080,
+      "rank_det_modp65521": 42,
+      "rank_perm_modp65521": 42,
+      "rank_det_Q_bareiss": 42,
+      "rank_perm_Q_bareiss": 42,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        3
+      ],
+      "mu": [
+        6
+      ],
+      "dim_lam_x_dim_mu": 495495,
+      "rank_det_modp65521": 10,
+      "rank_perm_modp65521": 10,
+      "rank_det_Q_bareiss": 10,
+      "rank_perm_Q_bareiss": 10,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 4,
+      "lam": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mu": [
+        3,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 623700,
+      "rank_det_modp65521": 59,
+      "rank_perm_modp65521": 59,
+      "rank_det_Q_bareiss": 59,
+      "rank_perm_Q_bareiss": 59,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        1,
+        1,
+        1
+      ],
+      "mu": [
+        4,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 776160,
+      "rank_det_modp65521": 64,
+      "rank_perm_modp65521": 64,
+      "rank_det_Q_bareiss": 64,
+      "rank_perm_Q_bareiss": 64,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        3
+      ],
+      "mu": [
+        3,
+        3
+      ],
+      "dim_lam_x_dim_mu": 816750,
+      "rank_det_modp65521": 40,
+      "rank_perm_modp65521": 40,
+      "rank_det_Q_bareiss": 40,
+      "rank_perm_Q_bareiss": 40,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        3
+      ],
+      "mu": [
+        5,
+        1
+      ],
+      "dim_lam_x_dim_mu": 1415700,
+      "rank_det_modp65521": 32,
+      "rank_perm_modp65521": 32,
+      "rank_det_Q_bareiss": 32,
+      "rank_perm_Q_bareiss": 32,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        3
+      ],
+      "mu": [
+        4,
+        2
+      ],
+      "dim_lam_x_dim_mu": 1764180,
+      "rank_det_modp65521": 51,
+      "rank_perm_modp65521": 51,
+      "rank_det_Q_bareiss": 51,
+      "rank_perm_Q_bareiss": 51,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 4,
+      "lam": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "mu": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 1995840,
+      "rank_det_modp65521": 111,
+      "rank_perm_modp65521": 111,
+      "rank_det_Q_bareiss": 111,
+      "rank_perm_Q_bareiss": 111,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        2,
+        1
+      ],
+      "mu": [
+        5,
+        1
+      ],
+      "dim_lam_x_dim_mu": 2059200,
+      "rank_det_modp65521": 44,
+      "rank_perm_modp65521": 44,
+      "rank_det_Q_bareiss": 44,
+      "rank_perm_Q_bareiss": 44,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        2,
+        1
+      ],
+      "mu": [
+        4,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 2217600,
+      "rank_det_modp65521": 37,
+      "rank_perm_modp65521": 37,
+      "rank_det_Q_bareiss": 37,
+      "rank_perm_Q_bareiss": 37,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        2,
+        1
+      ],
+      "mu": [
+        4,
+        2
+      ],
+      "dim_lam_x_dim_mu": 2566080,
+      "rank_det_modp65521": 41,
+      "rank_perm_modp65521": 41,
+      "rank_det_Q_bareiss": 41,
+      "rank_perm_Q_bareiss": 41,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 3,
+      "lam": [
+        2,
+        1
+      ],
+      "mu": [
+        3,
+        2,
+        1
+      ],
+      "dim_lam_x_dim_mu": 2661120,
+      "rank_det_modp65521": 25,
+      "rank_perm_modp65521": 25,
+      "rank_det_Q_bareiss": 25,
+      "rank_perm_Q_bareiss": 25,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    },
+    {
+      "a": 4,
+      "lam": [
+        4
+      ],
+      "mu": [
+        7
+      ],
+      "dim_lam_x_dim_mu": 3185325,
+      "rank_det_modp65521": 15,
+      "rank_perm_modp65521": 15,
+      "rank_det_Q_bareiss": 15,
+      "rank_perm_Q_bareiss": 15,
+      "matches_modular": true,
+      "bareiss_status": "EQUAL_Q"
+    }
+  ]
+}

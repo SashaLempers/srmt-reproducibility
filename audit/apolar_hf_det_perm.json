@@ -1,0 +1,22 @@
+{
+  "audit_key": "apolar_hf_det_perm",
+  "description": "Apolar Hilbert functions H_apolar(det3) and H_apolar(perm3), both equal to [1,9,9,1], computed by an independent apolarity / Hilbert-function routine in Macaulay2.",
+  "source_files": [
+    "macaulay2/srmt_v19_verify.m2",
+    "macaulay2/srmt_v19_pipeline.m2"
+  ],
+  "method": "apolar Hilbert function via inverse system in Macaulay2 (exact Q)",
+  "H_apolar_det3": [
+    1,
+    9,
+    9,
+    1
+  ],
+  "H_apolar_perm3": [
+    1,
+    9,
+    9,
+    1
+  ],
+  "reproduce": "M2 --script macaulay2/srmt_v19_verify.m2 (computes H_apolar_det3_QQ and H_apolar_perm3_QQ)"
+}

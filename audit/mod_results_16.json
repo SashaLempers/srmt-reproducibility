@@ -1,0 +1,265 @@
+{
+  "audit_key": "mod_results_16",
+  "description": "16 MOD-CERTIFIED entries of the Pieri small-|lambda| scan: ranks certified by modular arithmetic over GF(p), p = 65521 (too large for exact Bareiss within the time budget, but modular ranks of det3 and perm3 coincide).",
+  "source_files": [
+    "pipeline/koszul_young/final_verdict.json",
+    "pipeline/koszul_young/step4b_fast_modular.py"
+  ],
+  "method": "rank over GF(65521) via galois library",
+  "modular_prime": 65521,
+  "n_entries": 16,
+  "entries": [
+    {
+      "a": 4,
+      "lam": [
+        2,
+        2
+      ],
+      "mu": [
+        3,
+        2,
+        2
+      ],
+      "dim_lam_x_dim_mu": 8981280,
+      "rank_det_modp65521": 74,
+      "rank_perm_modp65521": 74,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        2,
+        1,
+        1
+      ],
+      "mu": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 9979200,
+      "rank_det_modp65521": 88,
+      "rank_perm_modp65521": 88,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        4
+      ],
+      "mu": [
+        6,
+        1
+      ],
+      "dim_lam_x_dim_mu": 10193040,
+      "rank_det_modp65521": 77,
+      "rank_perm_modp65521": 77,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        4
+      ],
+      "mu": [
+        4,
+        3
+      ],
+      "dim_lam_x_dim_mu": 11761200,
+      "rank_det_modp65521": 203,
+      "rank_perm_modp65521": 203,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        2,
+        1,
+        1
+      ],
+      "mu": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 13097700,
+      "rank_det_modp65521": 70,
+      "rank_perm_modp65521": 70,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        4
+      ],
+      "mu": [
+        5,
+        2
+      ],
+      "dim_lam_x_dim_mu": 15289560,
+      "rank_det_modp65521": 187,
+      "rank_perm_modp65521": 187,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        2,
+        1,
+        1
+      ],
+      "mu": [
+        5,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 16216200,
+      "rank_det_modp65521": 141,
+      "rank_perm_modp65521": 141,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        2,
+        2
+      ],
+      "mu": [
+        5,
+        2
+      ],
+      "dim_lam_x_dim_mu": 16679520,
+      "rank_det_modp65521": 180,
+      "rank_perm_modp65521": 180,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        3,
+        1
+      ],
+      "mu": [
+        6,
+        1
+      ],
+      "dim_lam_x_dim_mu": 20386080,
+      "rank_det_modp65521": 75,
+      "rank_perm_modp65521": 75,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        3,
+        1
+      ],
+      "mu": [
+        3,
+        3,
+        1
+      ],
+      "dim_lam_x_dim_mu": 20582100,
+      "rank_det_modp65521": 41,
+      "rank_perm_modp65521": 41,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        2,
+        2
+      ],
+      "mu": [
+        4,
+        2,
+        1
+      ],
+      "dim_lam_x_dim_mu": 22453200,
+      "rank_det_modp65521": 177,
+      "rank_perm_modp65521": 177,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        3,
+        1
+      ],
+      "mu": [
+        4,
+        3
+      ],
+      "dim_lam_x_dim_mu": 23522400,
+      "rank_det_modp65521": 50,
+      "rank_perm_modp65521": 50,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        3,
+        1
+      ],
+      "mu": [
+        5,
+        1,
+        1
+      ],
+      "dim_lam_x_dim_mu": 25482600,
+      "rank_det_modp65521": 68,
+      "rank_perm_modp65521": 68,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        2,
+        1,
+        1
+      ],
+      "mu": [
+        4,
+        2,
+        1
+      ],
+      "dim_lam_x_dim_mu": 26195400,
+      "rank_det_modp65521": 141,
+      "rank_perm_modp65521": 141,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        3,
+        1
+      ],
+      "mu": [
+        5,
+        2
+      ],
+      "dim_lam_x_dim_mu": 30579120,
+      "rank_det_modp65521": 80,
+      "rank_perm_modp65521": 80,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    },
+    {
+      "a": 4,
+      "lam": [
+        3,
+        1
+      ],
+      "mu": [
+        4,
+        2,
+        1
+      ],
+      "dim_lam_x_dim_mu": 41164200,
+      "rank_det_modp65521": 75,
+      "rank_perm_modp65521": 75,
+      "bareiss_status": "NOT_DONE_SIZE_LIMIT"
+    }
+  ]
+}

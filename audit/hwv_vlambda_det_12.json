@@ -1,0 +1,11 @@
+{
+  "audit_key": "hwv_vlambda_det_12",
+  "description": "The degree-4 isotypic decomposition of Sym^4(Sym^3 C^9) into 12 GL9-isotypes (length <= 9) via the plethysm s_3[s_3], and the non-vanishing v_lambda(det3) != 0 of an explicit highest-weight vector for each of the 12 isotypes, certifying I_4(GL9.det3) = 0 (Theorem on degree-four ideal vanishing).",
+  "source_files": [
+    "macaulay2/srmt_gct_combined_lab.m2"
+  ],
+  "method": "SchurRings plethysm(s_3,s_3) for the 12-summand decomposition + explicit HWV construction and exact evaluation on det3 in Macaulay2",
+  "n_isotypes": 12,
+  "multiplicity_free": true,
+  "reproduce": "M2 --script macaulay2/srmt_gct_combined_lab.m2 ; see Step A2 (plethysm s_3[s_3]) and the per-lambda evaluation table output/srmt_gct_results.csv"
+}

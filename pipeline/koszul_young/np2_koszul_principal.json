@@ -1,0 +1,42 @@
+[
+  {
+    "a": 1,
+    "dim_src": 81,
+    "dim_tgt": 324,
+    "prod": 26244,
+    "rank_det_mod": 80,
+    "rank_perm_mod": 80,
+    "differs": false,
+    "prime": 65521
+  },
+  {
+    "a": 2,
+    "dim_src": 324,
+    "dim_tgt": 756,
+    "prod": 244944,
+    "rank_det_mod": 315,
+    "rank_perm_mod": 315,
+    "differs": false,
+    "prime": 65521
+  },
+  {
+    "a": 3,
+    "dim_src": 756,
+    "dim_tgt": 1134,
+    "prod": 857304,
+    "rank_det_mod": 720,
+    "rank_perm_mod": 720,
+    "differs": false,
+    "prime": 65521
+  },
+  {
+    "a": 4,
+    "dim_src": 1134,
+    "dim_tgt": 1134,
+    "prod": 1285956,
+    "rank_det_mod": 950,
+    "rank_perm_mod": 934,
+    "differs": true,
+    "prime": 65521
+  }
+]

@@ -1,0 +1,69 @@
+M_det shape=(1134, 1134), dtype=int64
+M_det: 1125 non-zero rows, 1125 non-zero cols
+M_perm: 1125 non-zero rows, 1125 non-zero cols
+M_det reduced: (1125, 1125)
+M_perm reduced: (1125, 1125)
+
+Rangs numpy.linalg (float64) :
+  M_det:  950
+  M_perm: 934
+
+=== a=1 ===  src=V*(x)L^1V dim=81, tgt=V(x)L^2V dim=324, prod=26244
+  build det: 0.00s, build perm: 0.00s
+  rank det: 80 (mod 65521) in 0.01s
+  rank perm: 80 (mod 65521) in 0.01s
+  DIFFERS: False
+
+=== a=2 ===  src=V*(x)L^2V dim=324, tgt=V(x)L^3V dim=756, prod=244944
+  build det: 0.00s, build perm: 0.00s
+  rank det: 315 (mod 65521) in 0.07s
+  rank perm: 315 (mod 65521) in 0.06s
+  DIFFERS: False
+
+=== a=3 ===  src=V*(x)L^3V dim=756, tgt=V(x)L^4V dim=1134, prod=857304
+  build det: 0.01s, build perm: 0.01s
+  rank det: 720 (mod 65521) in 0.21s
+  rank perm: 720 (mod 65521) in 0.21s
+  DIFFERS: False
+
+=== a=4 ===  src=V*(x)L^4V dim=1134, tgt=V(x)L^5V dim=1134, prod=1285956
+  build det: 0.01s, build perm: 0.01s
+  rank det: 950 (mod 65521) in 0.28s
+  rank perm: 934 (mod 65521) in 0.30s
+  DIFFERS: True
+
+
+=== RESUME Koszul principal LO11 §1.2 sur Sym^3(C^9) ===
+  a=1: rk_det=80, rk_perm=80, DIFFERS=False
+  a=2: rk_det=315, rk_perm=315, DIFFERS=False
+  a=3: rk_det=720, rk_perm=720, DIFFERS=False
+  a=4: rk_det=950, rk_perm=934, DIFFERS=True
+  p=104729: rk_det=950, rk_perm=934
+  p=5000011: rk_det=950, rk_perm=934
+  p=7919: rk_det=950, rk_perm=934
+  p=31337: rk_det=950, rk_perm=934
+
+=== Test Bareiss sur matrice simple ===
+Test 3x3 rank 2:
+M_det shape=(1134, 1134), nnz=2520
+M_perm shape=(1134, 1134), nnz=2520
+M_det max abs val: 1
+M_perm max abs val: 1
+
+=== Bareiss exact Y_4(det3) ===
+  rank Q = 975 (en 0.3s)
+
+=== Bareiss exact Y_4(perm3) ===
+  rank Q = 934 (en 0.2s)
+
+=== VERDICT ===
+  rank Q(Y_4(det3))  = 975
+  rank Q(Y_4(perm3)) = 934
+  DIFFERS Q : True
+  Delta = 41
+
+Sauvegarde np4_bareiss_a4.json
+  bareiss: 2
+  numpy: 2
+Test eye(5) rank 5: bareiss = 5
+Test sparse rank 3: bareiss = 3

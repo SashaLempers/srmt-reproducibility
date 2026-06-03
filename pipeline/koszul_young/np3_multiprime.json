@@ -1,0 +1,39 @@
+{
+  "a": 4,
+  "shape": [
+    1134,
+    1134
+  ],
+  "primes": {
+    "65521": {
+      "rank_det": 950,
+      "rank_perm": 934,
+      "differs": true,
+      "time_det": 0.28723692893981934,
+      "time_perm": 0.27854180335998535
+    },
+    "1000000007": {
+      "rank_det": 950,
+      "rank_perm": 934,
+      "differs": true,
+      "time_det": 0.28874945640563965,
+      "time_perm": 0.279482364654541
+    },
+    "998244353": {
+      "rank_det": 950,
+      "rank_perm": 934,
+      "differs": true,
+      "time_det": 0.28107690811157227,
+      "time_perm": 0.2753026485443115
+    },
+    "1000000009": {
+      "rank_det": 950,
+      "rank_perm": 934,
+      "differs": true,
+      "time_det": 0.27832531929016113,
+      "time_perm": 0.2761855125427246
+    }
+  },
+  "det3_matrix_sha256": "444131ae58e57ced862659be17d88243dad040091247698559a2bd8faef2882a",
+  "perm3_matrix_sha256": "f318c7248b7bc1792048819e0acfa83c73a5943136e822ca473b5537746cb6d7"
+}

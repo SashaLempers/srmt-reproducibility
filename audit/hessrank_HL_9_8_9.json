@@ -1,0 +1,15 @@
+{
+  "audit_key": "hessrank_HL_9_8_9",
+  "description": "Generic Hessian rank rho(f) at a generic point. The deposited Macaulay2 Hessian diagnostic certifies rho(det3) = 9 (full rank of the generic Hessian of the determinant; runHessianDiag, tagged OBS-N as a diagnostic). The boundary-point values rho(P1) = 8 and rho(P2) = 9 for the two Huttenhain-Lairez boundary points P1, P2 of partial(GL9.det3) are stated in the paper at status EXACT-COMPUTED; the explicit boundary-point Hessian computation is reproducible from the HL boundary-point construction of [HuttenhainLairez] but is NOT contained in the deposited diagnostic scripts of this repository.",
+  "source_files": [
+    "macaulay2/srmt_v19_pipeline.m2",
+    "macaulay2/srmt_v18_pipeline.m2"
+  ],
+  "method": "exact symbolic Hessian rank in Q[x_1..x_9] (runHessianDiag=true)",
+  "rho_det3": 9,
+  "rho_det3_status": "computed in deposited scripts (OBS-N diagnostic)",
+  "rho_P1": 8,
+  "rho_P2": 9,
+  "rho_P1_P2_status": "EXACT-COMPUTED in the paper; boundary-point computation NOT in the deposited diagnostic scripts -- reproducible from the HL boundary-point construction",
+  "reproduce": "M2 --script macaulay2/srmt_v19_pipeline.m2 (CONFIG runHessianDiag = true) gives rho(det3)=9; P1/P2 require the HL boundary-point inputs"
+}

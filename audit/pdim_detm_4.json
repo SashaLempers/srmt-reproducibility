@@ -1,0 +1,13 @@
+{
+  "audit_key": "pdim_detm_4",
+  "description": "Projective dimensions of the Jacobian quotients R_Jac(det3)=S/J(det3) and R_Jac(perm3)=S/J(perm3) over S=Q[x_1..x_9], from minimal free resolutions in Macaulay2 (exact Q-arithmetic). pdim det3 = 4 (Eagon-Northcott/Gulliksen-Negard length), pdim perm3 = 9. By Auslander-Buchsbaum: depth det3 = 5, depth perm3 = 0. Cohen-Macaulay dichotomy: R_Jac(det3) is CM, R_Jac(perm3) is not (Theorem on homological obstruction).",
+  "source_files": [
+    "macaulay2/srmt_gct_combined_lab.m2"
+  ],
+  "method": "minimal free resolution in Macaulay2, exact Q-arithmetic",
+  "pdim_det3": 4,
+  "pdim_perm3": 9,
+  "depth_det3": 5,
+  "depth_perm3": 0,
+  "reproduce": "M2 --script macaulay2/srmt_gct_combined_lab.m2 ; see output/jacobian_pdim_summary.md (HOMOLOGY_PART, CHECK_EXPECTED_PDIM asserts EXPECTED_PDIM_DET=4, EXPECTED_PDIM_PERM=9)"
+}
