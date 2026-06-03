@@ -1,0 +1,71 @@
+================================================================================
+ SRMT v19 — LOCK AUDIT LOG (transcript)
+================================================================================
+ runId           : srmt_v19_lock_audit
+ m2Version       : 1.19.1
+ seed            : 42
+ primeModList    : [32003]
+ companion file  : srmt_v19_lock_audit_certificate.json  (machine-readable)
+--------------------------------------------------------------------------------
+ This text log is the human-readable transcript referenced by the paper.
+ The structured per-claim status and rank table live in the companion JSON
+ certificate (srmt_v19_lock_audit_certificate.json). The two files agree.
+================================================================================
+
+
+[EVENT KEY] sl9_kernel_deg3_QQ
+--------------------------------------------------------------------------------
+  Claim    : dim Sym^3( Sym^3 C^9 )^{SL_9} = 0   (Computation, QQ-Cert)
+  Method   : exact kernel over Q (fraction-free / Bareiss).
+             V = C^9 ; W = Sym^3 V (basis = 165 cubic monomials x_{i<=j<=k}).
+             Restrict to the T-fixed subspace (Sym^3 W)^T of total weight
+             (1,1,...,1): dim = 280 (the T-invariant degree-3 multisets of
+             cubic monomials whose joint exponent vector on x_1..x_9 is all-1).
+             The 8 simple raising operators e_{a,a+1} (a=1..8) of sl_9 act on
+             Sym^3(W) by the Leibniz rule (derivation extending the action on W).
+             Stacking the 8 images over the target Sym^3(W) (x) n^+ gives an
+             11200 x 280 rational matrix (8 root vectors x 1400 target triples).
+  Result   : dim (Sym^3 W)^T   = 280
+             matrix             = 11200 x 280
+             rank_Q             = 280
+             dim ker            = 280 - 280 = 0
+  Verdict  : PASS  ->  Sym^3(Sym^3 C^9)^{SL_9} = 0.
+  Reproduce: python3 code/python/sl9_kernel_deg3.py
+             (exact Q arithmetic; ~30 s; emits sl9_kernel_deg3_result.json)
+--------------------------------------------------------------------------------
+
+
+[EVENT KEY] delta_det3_QQ
+--------------------------------------------------------------------------------
+  Claim    : delta(det3) = rank( piMinus * Cat(det3)^T ) = 9   (QQ-Cert)
+  Ring     : QQ (exact)
+  Expected : 9
+  Observed : 9
+  Verdict  : OK
+  Note     : GL3 x GL3 lock-audit rank; see companion JSON, key delta_det3_QQ.
+--------------------------------------------------------------------------------
+
+
+[EVENT KEY] delta_perm3_QQ
+--------------------------------------------------------------------------------
+  Claim    : delta(perm3) = rank( piMinus * Cat(perm3)^T ) = 0   (QQ-Cert)
+  Ring     : QQ (exact)
+  Expected : 0
+  Observed : 0
+  Verdict  : OK
+  Note     : GL3 x GL3 lock-audit rank; see companion JSON, key delta_perm3_QQ.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+ SUMMARY
+--------------------------------------------------------------------------------
+ sl9_kernel_deg3_QQ : PASS  (dim ker = 0)
+ delta_det3_QQ      : OK    (= 9)
+ delta_perm3_QQ     : OK    (= 0)
+
+ For the full GL3 x GL3 rank table, projector idempotency, singular-locus
+ dimensions, apolar Hilbert functions, and Jacobian-ideal invariants, see the
+ companion machine-readable certificate:
+     logs/lock_audit/srmt_v19_lock_audit_certificate.json
+================================================================================

@@ -5,7 +5,7 @@
     "runFinishedAt": "1778077414",
     "m2Version":     "1.19.1",
     "seed":          42,
-    "primeModList":  {32003},
+    "primeModList":  [32003],
     "scriptSha256":  "unavailable",
     "flags": {
       "runQQ":          true,
@@ -45,6 +45,7 @@
     {"key": "codim_J_perm3_QQ", "expected": 6, "observed": 6, "status": "OK", "tag": "QQ-CERTIFIED", "ring": "QQ"},
     {"key": "degree_J_det3_QQ", "expected": 6, "observed": 6, "status": "OK", "tag": "QQ-CERTIFIED", "ring": "QQ"},
     {"key": "degree_J_perm3_QQ", "expected": 24, "observed": 24, "status": "OK", "tag": "QQ-CERTIFIED", "ring": "QQ"},
+    {"key": "sl9_kernel_deg3_QQ", "expected": 0, "observed": 0, "status": "OK", "tag": "QQ-CERTIFIED", "ring": "QQ", "note": "dim Sym^3(Sym^3 C^9)^{SL_9} = 0 ; matrix 11200x280 ; rank_Q=280 ; see code/python/sl9_kernel_deg3.py"},
     {"key": "NIV1_orbits_distinct", "expected": true, "observed": true, "status": "OK", "tag": "PROVED-ALG", "ring": "QQ"},
     {"key": "NIV2_dir1_perm_notin_clos_det", "expected": true, "observed": true, "status": "OK", "tag": "PROVED-ALG", "ring": "QQ"}
   ],
@@ -112,6 +113,7 @@
     {"step": "strat_C_jacInvariants", "status": "DONE", "info": "cdJDet=4 cdJPerm=6 dgJDet=6 dgJPerm=24"},
     {"step": "section15_orbit", "status": "PROVED-ALG", "info": "dim_singular_locus"},
     {"step": "section15_dir1", "status": "PROVED-ALG", "info": "dim_singular_locus"},
+    {"step": "sl9_kernel_deg3_QQ", "status": "QQ-CERTIFIED", "info": "dim ker = 0 ; 11200x280 ; rank_Q=280 ; Sym^3(Sym^3 C^9)^SL9 = 0"},
     {"step": "section15_dir2", "status": "OPEN", "info": "GCT central conjecture"}
   ],
   "quartic_observations": [

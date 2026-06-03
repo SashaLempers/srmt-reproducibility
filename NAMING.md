@@ -10,6 +10,7 @@ computation in this repository.
 | `repth_tools.py`               | helper functions inside `code/python/srmt_v19_*.py`       | present (inlined) |
 | `catalecticant_ranks.py`       | `code/m2/srmt_v15_pipeline.m2` (catalecticant ranks)      | present |
 | `build_hw_vectors.py`          | `code/python/srmt_v19_sparse_search.py`                   | present |
+| (SL9 degree-3 kernel, Computation 9) | `code/python/sl9_kernel_deg3.py`                    | present |
 | `rank_test.py`                 | `code/python/srmt_v19_certify.py` (exact Q jet test)      | present |
 | `koszul_young_test.py`         | `code/python/route_flattening_search.py` (C1-C2 complete; C3-C5 skeletons) | partial |
 | `hessian_step_B1_B3.py`        | `code/python/hessian_perm3.py` (det Hess(det3) baseline + perm3 setup) | present |
@@ -33,6 +34,24 @@ verifies, with no floating point:
 Run it with `python3 code/python/hessian_perm3.py` (exit code 0 iff all
 16 checks pass). The machine-readable result is in
 `logs/hessian/hessian_perm3_certificate.json`.
+
+## Lock-audit transcript
+
+The paper cites the audit transcript `srmt_v19_lock_audit_log.txt`. The
+repository provides it at `logs/lock_audit/srmt_v19_lock_audit_log.txt`
+(human-readable) alongside the machine-readable companion
+`logs/lock_audit/srmt_v19_lock_audit_certificate.json`. The text log
+records, in particular, the event key `sl9_kernel_deg3_QQ`
+(dim Sym^3(Sym^3 C^9)^{SL_9} = 0, an 11200x280 exact kernel over Q,
+rank 280) and the GL3xGL3 ranks `delta_det3_QQ = 9`, `delta_perm3_QQ = 0`.
+The SL9 computation is reproduced by `code/python/sl9_kernel_deg3.py`.
+
+## Degree-<=5 Bareiss transcript
+
+`logs/bareiss/bareiss_deg_le5_stdout.log` is the exact-arithmetic Bareiss
+rank transcript over the 21 admissible degree-<=5 candidates (all det/perm
+ranks equal). It corresponds to the machine-readable
+`audit/bareiss_results_21.json`.
 
 ## Earlier-version helper scripts
 
