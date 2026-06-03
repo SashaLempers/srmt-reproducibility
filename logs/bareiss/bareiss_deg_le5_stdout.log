@@ -1,0 +1,84 @@
+[(3, 2, 1), (4, 1, 1), (4, 2), (5, 1)]
+horizontal_strips OK
+
+=== Demo Pieri pour lambda = (2,1) ⊢ 3, k=3 ===
+  mu = (3, 2, 1), dim S_mu(C^9) = 11088
+  mu = (4, 1, 1), dim S_mu(C^9) = 9240
+  mu = (4, 2), dim S_mu(C^9) = 10692
+  mu = (5, 1), dim S_mu(C^9) = 8580
+=== Bareiss exact sur 21 candidats (prod <= 5,000,000) ===
+
+[1/21] a=0 lam=() mu=(3,) prod=165
+  shape 165 x 1; nnz_det=6 nnz_perm=6
+  rank_Q(det) = 1  (t = 0.0s)
+  rank_Q(perm) = 1  (t = 0.0s)
+  matches_modular=True
+
+[2/21] a=1 lam=(1,) mu=(4,) prod=4,455
+  shape 495 x 9; nnz_det=12 nnz_perm=12
+  rank_Q(det) = 3  (t = 0.0s)
+  rank_Q(perm) = 3  (t = 0.0s)
+  matches_modular=True
+
+[3/21] a=1 lam=(1,) mu=(3, 1) prod=8,910
+  shape 990 x 9; nnz_det=30 nnz_perm=30
+  rank_Q(det) = 3  (t = 0.0s)
+  rank_Q(perm) = 3  (t = 0.0s)
+  matches_modular=True
+
+[4/21] a=2 lam=(2,) mu=(5,) prod=57,915
+  shape 1287 x 45; nnz_det=20 nnz_perm=20
+  rank_Q(det) = 6  (t = 0.0s)
+  rank_Q(perm) = 6  (t = 0.0s)
+  matches_modular=True
+
+[5/21] a=2 lam=(1, 1) mu=(3, 1, 1) prod=99,792
+  shape 2772 x 36; nnz_det=90 nnz_perm=90
+  rank_Q(det) = 17  (t = 0.1s)
+  rank_Q(perm) = 17  (t = 0.1s)
+  matches_modular=True
+
+[6/21] a=2 lam=(1, 1) mu=(4, 1) prod=114,048
+  shape 3168 x 36; nnz_det=88 nnz_perm=88
+  rank_Q(det) = 21  (t = 0.1s)
+  rank_Q(perm) = 21  (t = 0.1s)
+  matches_modular=True
+
+[7/21] a=2 lam=(2,) mu=(3, 2) prod=133,650
+  shape 2970 x 45; nnz_det=66 nnz_perm=66
+  rank_Q(det) = 11  (t = 0.1s)
+  rank_Q(perm) = 11  (t = 0.1s)
+  matches_modular=True
+
+[8/21] a=2 lam=(2,) mu=(4, 1) prod=142,560
+  shape 3168 x 45; nnz_det=66 nnz_perm=66
+  rank_Q(det) = 11  (t = 0.1s)
+  rank_Q(perm) = 11  (t = 0.1s)
+  matches_modular=True
+
+[9/21] a=3 lam=(1, 1, 1) mu=(3, 1, 1, 1) prod=388,080
+  shape 4620 x 84; nnz_det=162 nnz_perm=162
+  rank_Q(det) = 42  (t = 0.5s)
+  rank_Q(perm) = 42  (t = 0.4s)
+  matches_modular=True
+
+[10/21] a=3 lam=(3,) mu=(6,) prod=495,495
+  shape 3003 x 165; nnz_det=30 nnz_perm=30
+  rank_Q(det) = 10  (t = 0.2s)
+  rank_Q(perm) = 10  (t = 0.2s)
+  matches_modular=True
+
+[11/21] a=4 lam=(1, 1, 1, 1) mu=(3, 1, 1, 1, 1) prod=623,700
+  shape 4950 x 126; nnz_det=184 nnz_perm=184
+  rank_Q(det) = 59  (t = 1.0s)
+  rank_Q(perm) = 59  (t = 0.9s)
+  matches_modular=True
+
+[12/21] a=3 lam=(1, 1, 1) mu=(4, 1, 1) prod=776,160
+  shape 9240 x 84; nnz_det=282 nnz_perm=282
+  rank_Q(det) = 64  (t = 1.2s)
+  rank_Q(perm) = 64  (t = 1.3s)
+  matches_modular=True
+
+[13/21] a=3 lam=(3,) mu=(3, 3) prod=816,750
+  shape 4950 x 165; nnz_det=100 nnz_perm=100
