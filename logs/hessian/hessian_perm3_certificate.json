@@ -1,0 +1,45 @@
+{
+  "certificate": "hessian_perm3_squarefree",
+  "generated_utc": "2026-06-03T15:13:54.983179Z",
+  "engine": "SymPy 1.14.0",
+  "arithmetic": "exact rational (Q), no floating point",
+  "seed": 42,
+  "variables": [
+    "x11",
+    "x12",
+    "x13",
+    "x21",
+    "x22",
+    "x23",
+    "x31",
+    "x32",
+    "x33"
+  ],
+  "results": {
+    "detHess_det3_equals_minus2_det3cubed": true,
+    "D_perm3_degree": 9,
+    "residual_R_num_monomials": 37,
+    "distinct_ratios_D_over_perm3cubed": [
+      "-2",
+      "2/3",
+      "10/3"
+    ],
+    "D_is_proportional_to_perm3cubed": false,
+    "Q_factor_count": 1,
+    "Q_factor_degree": 9,
+    "Q_factor_multiplicity": 1,
+    "Q_factor_num_monomials": 55,
+    "factorization_unit": "-2",
+    "D_is_rational_cube": false,
+    "gcd_nine_first_partials": "2",
+    "gcd_is_nonzero_constant": true,
+    "D_squarefree_over_C": true,
+    "D_is_cube_over_C": false
+  },
+  "claims_supported": [
+    "thm:Hess-det (det Hess(det3) = -2 det3^3)",
+    "thm:Hess-perm (1)-(4)",
+    "lem:squarefree (D squarefree over C, not a cube over C)",
+    "thm:hess-separator (perm3 not in closure GL9.det3, one-sided)"
+  ]
+}

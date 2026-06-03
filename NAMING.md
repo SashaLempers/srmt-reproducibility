@@ -1,9 +1,8 @@
 # Correspondence between paper script names and repository files
 
-The reproducibility section of the manuscript refers to idealized script
-names. The actual implementation in this repository is organized differently.
-This table maps the names cited in the paper to the files that actually
-perform each computation.
+The manuscript refers to idealized script names. This table maps each
+name cited in the paper to the file(s) that actually perform the
+computation in this repository.
 
 | Name cited in paper            | Actual file(s) in this repository                         | Status |
 |--------------------------------|-----------------------------------------------------------|--------|
@@ -11,24 +10,38 @@ perform each computation.
 | `repth_tools.py`               | helper functions inside `code/python/srmt_v19_*.py`       | present (inlined) |
 | `catalecticant_ranks.py`       | `code/m2/srmt_v15_pipeline.m2` (catalecticant ranks)      | present |
 | `build_hw_vectors.py`          | `code/python/srmt_v19_sparse_search.py`                   | present |
-| `rank_test.py`                 | `code/python/srmt_v19_certify.py` (exact ℚ jet test)      | present |
-| `koszul_young_test.py`         | `code/python/route_flattening_search.py` (C1–C2 complete; C3–C5 are skeletons) | partial |
-| `hessian_step_B1_B3.py`        | — no dedicated script —                                    | **MISSING** |
-| `hessian_step_B4b.py`          | — no dedicated script —                                    | **MISSING** |
-| `hessian_step_B5.py`           | — no dedicated script —                                    | **MISSING** |
+| `rank_test.py`                 | `code/python/srmt_v19_certify.py` (exact Q jet test)      | present |
+| `koszul_young_test.py`         | `code/python/route_flattening_search.py` (C1-C2 complete; C3-C5 skeletons) | partial |
+| `hessian_step_B1_B3.py`        | `code/python/hessian_perm3.py` (det Hess(det3) baseline + perm3 setup) | present |
+| `hessian_step_B4b.py`          | `code/python/hessian_perm3.py` (residual R, 37 monomials, ratios, factor_list) | present |
+| `hessian_step_B5.py`           | `code/python/hessian_perm3.py` (gcd-of-partials squarefree lemma + line test) | present |
 
-## Known gaps
+## Hessian certification (now included)
 
-1. **Hessian squarefree lemma.** The lemma asserting that `det Hess(perm₃)`
-   is squarefree over C, that the gcd of its nine first partials is constant,
-   and that it is "not a cube", has no dedicated exact computation here. In the
-   current code the Hessian appears only as mod-p numeric rank sampling and as
-   the C1 catalecticant in the flattening script. An exact discriminant /
-   factorisation script over ℚ should be added (or the claim re-tagged as
-   purely algebraic).
+`code/python/hessian_perm3.py` is an exact rational (SymPy) script that
+verifies, with no floating point:
 
-2. **Flattening defects C3–C5.** `route_flattening_search.py` documents C1 and
-   C2 as complete; C3, C4 and C5 are skeleton stubs with TODOs.
+- `det Hess(det3) = -2 (det3)^3`                                 (Thm. Hess-det)
+- residual `R = det Hess(perm3) + 2 perm3^3` has exactly 37 monomials   (Thm. Hess-perm (1))
+- distinct coefficient ratios `D/perm3^3` on common support = `{-2, 2/3, 10/3}` (Thm. Hess-perm (2))
+- `D = det Hess(perm3)` is Q-irreducible: one factor, degree 9, multiplicity 1, 55 monomials, unit -2 (Thm. Hess-perm (3))
+- `D` is not a rational cube                                     (Thm. Hess-perm (4))
+- **gcd of the nine first partials of `D` is the nonzero constant `2`**,
+  hence `D` is squarefree over C and NOT a cube over C           (Lemma squarefree, HEADLINE)
+- generic-line restriction of `D` has 9 distinct roots (independent check) (Remark)
 
-3. **`m2_data.txt`.** Required by the Python core; regenerate from the M2
-   pipeline (see README).
+Run it with `python3 code/python/hessian_perm3.py` (exit code 0 iff all
+16 checks pass). The machine-readable result is in
+`logs/hessian/hessian_perm3_certificate.json`.
+
+## Data generation (now included)
+
+`code/gen_m2_data.py` regenerates `code/python/m2_data.txt` (the gl_9
+action on Sym^3(C^9) and the det3 coefficient vector) in exact arithmetic,
+reproducing the conventions of `code/m2/srmt_v15_pipeline.m2`
+(ring QQ[y_0..y_8], matIdx(i,j)=3i+j, the explicit mons3 ordering).
+
+## Remaining partial item
+
+- **Flattening defects C3-C5.** `route_flattening_search.py` documents
+  C1 and C2 as complete; C3, C4 and C5 are skeleton stubs with TODOs.
