@@ -16,7 +16,7 @@ computation in this repository.
 | `hessian_step_B4b.py`          | `code/python/hessian_perm3.py` (residual R, 37 monomials, ratios, factor_list) | present |
 | `hessian_step_B5.py`           | `code/python/hessian_perm3.py` (gcd-of-partials squarefree lemma + line test) | present |
 
-## Hessian certification (now included)
+## Hessian certification
 
 `code/python/hessian_perm3.py` is an exact rational (SymPy) script that
 verifies, with no floating point:
@@ -34,14 +34,14 @@ Run it with `python3 code/python/hessian_perm3.py` (exit code 0 iff all
 16 checks pass). The machine-readable result is in
 `logs/hessian/hessian_perm3_certificate.json`.
 
-## Data generation (now included)
+## Earlier-version helper scripts
 
-`code/gen_m2_data.py` regenerates `code/python/m2_data.txt` (the gl_9
-action on Sym^3(C^9) and the det3 coefficient vector) in exact arithmetic,
-reproducing the conventions of `code/m2/srmt_v15_pipeline.m2`
-(ring QQ[y_0..y_8], matIdx(i,j)=3i+j, the explicit mons3 ordering).
+The directory `archive_v18_v19/` contains helper and data-generation scripts
+from earlier versions of the project (e.g. `gen_m2_data.py`, `gen_hessian_cert.py`,
+`srmt_v17_pipeline.m2`, `route_alpha_perm3.py`, `m2_data.txt`). They are not
+cited by the current paper and are retained for provenance only.
 
 ## Remaining partial item
 
-- **Flattening defects C3-C5.** `route_flattening_search.py` documents
+- **Flattening defects C3-C5.** `code/python/route_flattening_search.py` documents
   C1 and C2 as complete; C3, C4 and C5 are skeleton stubs with TODOs.

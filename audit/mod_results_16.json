@@ -1,9 +1,9 @@
 {
   "audit_key": "mod_results_16",
-  "description": "16 MOD-CERTIFIED entries of the Pieri small-|lambda| scan: ranks certified by modular arithmetic over GF(p), p = 65521 (too large for exact Bareiss within the time budget, but modular ranks of det3 and perm3 coincide).",
+  "description": "16 MOD-CERTIFIED entries of the exhaustive degree-<=5 SRMT scan: ranks certified by modular arithmetic over GF(p), p = 65521 (too large for exact Bareiss within the time budget, but modular ranks of det3 and perm3 coincide).",
   "source_files": [
-    "pipeline/koszul_young/final_verdict.json",
-    "pipeline/koszul_young/step4b_fast_modular.py"
+    "self-contained (16 entries embedded below)",
+    "code/python/srmt_v19_sparse_search.py"
   ],
   "method": "rank over GF(65521) via galois library",
   "modular_prime": 65521,

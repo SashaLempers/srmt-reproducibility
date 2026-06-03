@@ -1,10 +1,9 @@
 {
   "audit_key": "bareiss_results_21",
-  "description": "21 QQ-CERTIFIED Bareiss exact-rank entries of the Pieri small-|lambda| scan (Theorem 6.5/6.9). All ranks over Q computed by fraction-free Bareiss elimination; det3 and perm3 ranks coincide on all 21 (EQUAL_Q).",
+  "description": "21 QQ-CERTIFIED Bareiss exact-rank entries of the exhaustive degree-<=5 SRMT scan. All ranks over Q computed by fraction-free Bareiss elimination; det3 and perm3 ranks coincide on all 21 (EQUAL_Q).",
   "source_files": [
-    "pipeline/koszul_young/final_verdict.json",
-    "pipeline/koszul_young/bareiss_results.json",
-    "pipeline/koszul_young/step8_bareiss.py"
+    "self-contained (21 entries embedded below)",
+    "code/python/srmt_v19_certify.py"
   ],
   "method": "fraction-free Bareiss elimination over Q (exact rational arithmetic, sympy.Rational)",
   "n_entries": 21,
